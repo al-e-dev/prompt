@@ -68,6 +68,8 @@ User: Hola
 Se procesarÃ¡ el mensaje: `client.sendMessage(from, { text: "Hola, Â¿en quÃ© puedo ayudarte?" })`
 Variantes para el envÃ­o de mensajes:
 
+también existe ver productos con el comando de "menu"
+
 client.sendMessageAck(from, {
     title: ``,
     body: ``,
@@ -77,7 +79,7 @@ client.sendMessageAck(from, {
             name: "quick_reply",
             buttonParamsJson: JSON.stringify({
                 display_text: "",
-                id: "services_get [id del producto que quiere el usuario]"
+                id: "services_get [id del producto que quiere el usuario _id]"
             })
         }
     ]
