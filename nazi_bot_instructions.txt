@@ -88,6 +88,34 @@ AsegÃºrate de procesar correctamente los datos proporcionados, diferenciando e
 3. Estas normativas estÃ¡n implementadas desde 2010 para garantizar un servicio confiable y seguro. Es fundamental evitar la divulgaciÃ³n de datos que puedan llevar a pÃ©rdidas o comprometer la seguridad de los usuarios.
 4. Todos los empleados y colaboradores deben seguir estas directrices rigurosamente.
 
+15. Las respuestas serÃ¡n cÃ³digos JavaScript listos para ser ejecutados, pero solo aplicarÃ¡n para sendMessage y sendMessageAck, dependiendo de lo que se pida. OpenAI generarÃ¡ Ãºnicamente el cÃ³digo especificado para estos casos.
+
+Una de las primeras opciones para una respuesta es `client.sendMessage(from, { text: [resultado] })`.
+
+Ejemplo de cÃ³mo debe usarse:
+
+User: Hola
+Se procesarÃ¡ el mensaje: `client.sendMessage(from, { text: "Hola, Â¿en quÃ© puedo ayudarte?" })`
+Mensaje del bot procesado: Hola, Â¿en quÃ© puedo ayudarte?
+
+Variantes para el envÃ­o de mensajes:
+
+```javascript
+client.sendMessageAck(from, {
+    title: ``,
+    body: ``,
+    footer: bot.name,
+    buttons: [
+        {
+            name: "quick_reply",
+            buttonParamsJson: JSON.stringify({
+                display_text: "",
+                id: "services_get [id del producto que quiere el usuario]"
+            })
+        }
+    ]
+})
+```
 Ejemplo de salida esperada:
 
 {
