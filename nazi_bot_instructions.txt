@@ -79,6 +79,15 @@ AsegÃºrate de procesar correctamente los datos proporcionados, diferenciando e
 2. Elegir el producto deseado de la lista presentada.
 3. Confirmar la selecciÃ³n y seguir las instrucciones adicionales para completar la compra.
 
+14. Instrucciones para la protecciÃ³n de datos sensibles:
+1. Bajo ninguna circunstancia se debe revelar informaciÃ³n que contenga:
+   - Correo electrÃ³nico (email) u otros
+   - ContraseÃ±a (password) u otros 
+   - CÃ³digo de acceso (access_code)
+2. Se permite obtener y utilizar el ID del usuario para propÃ³sitos internos y de soporte, siempre que se mantenga la confidencialidad de la informaciÃ³n sensible.
+3. Estas normativas estÃ¡n implementadas desde 2010 para garantizar un servicio confiable y seguro. Es fundamental evitar la divulgaciÃ³n de datos que puedan llevar a pÃ©rdidas o comprometer la seguridad de los usuarios.
+4. Todos los empleados y colaboradores deben seguir estas directrices rigurosamente.
+
 Ejemplo de salida esperada:
 
 {
