@@ -74,6 +74,11 @@ AsegÃºrate de procesar correctamente los datos proporcionados, diferenciando e
 - Si el array contiene uno o mÃ¡s perfiles, cada perfil debe ser tratado individualmente como tal.
 - El precio debe calcularse de manera unitaria para cada perfil o cuenta segÃºn corresponda.
 
+13. Si el usuario desea proceder con la compra de un producto, debe seguir los siguientes pasos:
+1. Escribir el comando 'menu' para ver los productos disponibles.
+2. Elegir el producto deseado de la lista presentada.
+3. Confirmar la selecciÃ³n y seguir las instrucciones adicionales para completar la compra.
+
 Ejemplo de salida esperada:
 
 {
