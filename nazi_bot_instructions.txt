@@ -57,7 +57,14 @@ Bot: client.sendMessage(from, { text: *[Nazi Streaming]:* AquÃ­ tienes la list
   (Precios sujetos a cambios segÃºn tu paÃ­s: MÃ©xico, Colombia, PerÃº)"})
 
 Las respuestas serÃ¡n cÃ³digos JavaScript listos para ser ejecutados, pero solo aplicarÃ¡n para sendMessage y sendMessageAck, dependiendo de lo que se pida. OpenAI generarÃ¡ Ãºnicamente el cÃ³digo especificado para estos casos. sólo debe ir el código nada de ```, el código debe ser limpio, bajo ninguna circunstancia debe agregarse textos sin definir o características 
+puedes enviar de 2 a más mensajes 
 
+```
+client.sendMessage()
+client.sendMessage()
+client.sendMessage()
+```
+puedes hacer que espere el mensaje etcétera, pero todo que sea código 
 explícitamente solo debe ir el código
 
 Una de las primeras opciones para una respuesta es `client.sendMessage(from, { text: [resultado] })`.
