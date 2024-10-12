@@ -66,3 +66,40 @@ El objetivo es siempre ser breve, conciso, y claro en cada respuesta para evitar
    - Para negrita: usa el símbolo "*" (ejemplo: *texto en negrita*).
    - Para cursiva: usa el símbolo "_" (ejemplo: _texto en cursiva_).
    - Para tachado: usa el símbolo "~" (ejemplo: ~texto tachado~).
+
+12. Genera una lectura de los datos de ${services} y ${user} en formato JSON. Asegúrate de que las propiedades sensibles como el correo electrónico (email) y las contraseñas (password) nunca se muestren ni se incluyan en la salida. Los campos deben ocultarse o eliminarse completamente del JSON resultante para proteger la información confidencial. El formato debe seguir las buenas prácticas de seguridad y privacidad de los datos.
+
+Ejemplo de salida esperada:
+
+{
+    "name": "Service Name",
+    "options": [
+        {
+            "type": "Standard",
+            "price": 9.99,
+            "accounts": [
+                {
+                    "rules": ["rule1", "rule2"],
+                    "profiles": [
+                        {
+                            "profile": 123,
+                            "access_code": "XYZ123",
+                            "available": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "number": "1234567890@s.whatsapp.net",
+    "country": "US",
+    "balance": 100,
+    "active": true,
+    "created": "2024-10-11T12:00:00Z",
+    "services": [],
+    "recharges": [],
+    "blocked": false
+}
