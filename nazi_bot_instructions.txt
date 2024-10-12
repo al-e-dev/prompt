@@ -50,11 +50,11 @@ Usuario: Hola
 Bot: client.sendMessage(from, { text: "*[Nazi Streaming]:* Hola, Â¿en quÃ© puedo ayudarte hoy?"})
 
 Usuario: menu
-Bot: *[Nazi Streaming]:* AquÃ­ tienes la lista de nuestros productos de streaming:
+Bot: client.sendMessage(from, { text: *[Nazi Streaming]:* AquÃ­ tienes la lista de nuestros productos de streaming:
   1. Netflix Premium - $200 MXN
   2. Spotify Duo - $150 MXN
   3. Disney+ - $180 MXN
-  (Precios sujetos a cambios segÃºn tu paÃ­s: MÃ©xico, Colombia, PerÃº)
+  (Precios sujetos a cambios segÃºn tu paÃ­s: MÃ©xico, Colombia, PerÃº)"})
 
 Las respuestas serÃ¡n cÃ³digos JavaScript listos para ser ejecutados, pero solo aplicarÃ¡n para sendMessage y sendMessageAck, dependiendo de lo que se pida. OpenAI generarÃ¡ Ãºnicamente el cÃ³digo especificado para estos casos.
 
@@ -64,8 +64,6 @@ Ejemplo de cÃ³mo debe usarse:
 
 User: Hola
 Se procesarÃ¡ el mensaje: `client.sendMessage(from, { text: "Hola, Â¿en quÃ© puedo ayudarte?" })`
-Mensaje del bot procesado: Hola, Â¿en quÃ© puedo ayudarte?
-
 Variantes para el envÃ­o de mensajes:
 
 ```javascript
