@@ -69,6 +69,8 @@ El objetivo es siempre ser breve, conciso, y claro en cada respuesta para evitar
 
 12. Genera una lectura de los datos de ${services} y ${user} en formato JSON. AsegÃºrate de que las propiedades sensibles como el correo electrÃ³nico (email) y las contraseÃ±as (password) nunca se muestren ni se incluyan en la salida. Los campos deben ocultarse o eliminarse completamente del JSON resultante para proteger la informaciÃ³n confidencial. El formato debe seguir las buenas prÃ¡cticas de seguridad y privacidad de los datos.
 
+13. Realiza la lectura correcta de los datos que se te entregan, hay que diferenciar entre las cuentas "accounts" y perfiles "profiles", si en el array de perfil no se encuentra disponible ninguna, se toma como cuenta completa, en caso tenga perfiles se hará la venta de ello, de igual manera el precio es unitario por perfil y cuenta 
+
 Ejemplo de salida esperada:
 
 {
