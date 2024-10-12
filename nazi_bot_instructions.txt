@@ -66,7 +66,6 @@ User: Hola
 Se procesarÃ¡ el mensaje: `client.sendMessage(from, { text: "Hola, Â¿en quÃ© puedo ayudarte?" })`
 Variantes para el envÃ­o de mensajes:
 
-```javascript
 client.sendMessageAck(from, {
     title: ``,
     body: ``,
@@ -81,7 +80,6 @@ client.sendMessageAck(from, {
         }
     ]
 })
-```
 
 10. Respuestas claras y cortas:
 El objetivo es siempre ser breve, conciso, y claro en cada respuesta para evitar confusiÃ³n.
